@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAGA SWETHA</title>
+    <style>
+        body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+    padding: 5px;
+    background-color: #a8ecea;
+}
+
+
+.container{
+    height:100vh;
+    display:grid;
+    grid-template-columns: 1fr,1fr,1fr;
+    grid-template-rows: 0.2fr,1.2fr,1fr,1fr,1fr,1fr,1fr,1fr;
+    grid-gap:0.2rem;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "project project project"
+    "project1 project2 project3"
+    "experience experience experience"
+    "education education education"
+    "blogs blogs blogs"
+    "footer footer footer"
+}
+nav {
+    grid-area: nav;
+    background-color: #2b2727;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav li {
+    flex: 1; 
+    text-align: center; 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(65, 191, 216);
+}
+main{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #73b1bd;
+
+}
+main h3{
+    text-align: center;
+}
+
+main img{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    height:270px;
+    width:225px;
+    display: block;
+}
+
+
+#Projects{
+    grid-area: project;
+    background-color:  #73b1bd;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    text-align: left; 
+}
+#project1{
+    grid-area: project1;
+}
+#project2{
+    grid-area: project2;
+}
+#project3{
+    grid-area: project3;
+}
+#Projects ul {
+    list-style-type: none;
+    display: flex;
+   
+}
+#Project li {
+    flex: 1; 
+    text-align: center; 
+    margin:5px;
+}
+#Project_img{
+    height:100px;
+    width:150px;
+
+}
+#Experience {
+    grid-area: experience;
+    background-color:  #73b1bd;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#Education {
+    grid-area: education;
+    background-color:  #73b1bd;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+.edu{
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+}
+.edu img{
+    height:130px;
+    width: 100px;
+    border-radius: 5px;
+    padding-right: 20px;
+}
+#Blogs{
+    grid-area: blogs;
+    background-color:  #73b1bd;
+    padding: 10px;
+}
+
+.blog{
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+}
+.blog img{
+    height:120px;
+    width: 120px;
+    padding-right: 20px;
+}
+
+footer{
+    grid-area: footer;
+    background-color:  #73b1bd;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer img{
+    padding-right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width:500px){
+    .my_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr ;
+        grid-template-areas:
+        "main"
+        "about"
+        "education"
+        "experience"
+        "project"
+        "project1"
+        "project2"
+        "project3"
+        "blogs"
+        "footer"
+    }
+    nav{
+        display:none;
+    }
+    main{
+        display: inline-block;
+        align-items: left;
+        text-align: left;
+    
+    }
+    main img{
+        padding-left: 5px;
+        padding-top: 15px;
+    }
+    main h3{
+        text-align: left;
+    }
+    #Projects ul {
+        list-style-type: none;
+        display: block;
+       
+    }
+    #Project li {
+        flex: 1; 
+        text-align: center; 
+        margin:5px;
+    }
+    #Project_img{
+        height:100px;
+        width:150px;
+    
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div>
+                <ul><li></li><li></li><li></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Projects">PROJECTS</a></li>
+                    <li><a href="#Experience">EXPERIENCE</a></li>
+                    <li><a href="#Education">EDUCATION</a></li>
+                    <li><a href="#Blogs">BLOGS</a></li>
+                    <li><a href="#Footer">FOOTER</a></li>
+                    </ul>
+            </div>
+        </nav>
+        <main>
+            <div>
+                <img src="https://i.ibb.co/fqXRjwV/profile.jpg">
+                <H3>NAGA SWETHA NALLANI</H3>
+                
+            </div>
+            <div >
+                <h2 id="About" >ABOUT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    mod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p> 
+            </div>
+        </main>    
+        <div id="Projects">
+            <h2>PROJECTS</h2> <br>
+            <ul><li id="project1">
+                    <img id="Project_img" src="https://i.ibb.co/7bhZ6jK/Project1.jpg">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    </p>
+                </li>
+            
+                <li id="project2">
+                    <img id="Project_img" src="https://i.ibb.co/VV1BPc2/Project2.jpg">
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    </p>
+                </li>
+            
+                <li id="project3">
+                        <img id="Project_img" src="https://i.ibb.co/MGrV77M/Project3.jpeg">
+                        <h3>Project 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                </li>
+            </ul>   
+        </div>
+        <div id="Experience">
+            <h2>EXPERIENCE</h2>
+            <h3>COMPANY 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            </p>
+            <h3>COMPANY 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            </p>
+            
+        </div>
+    
+    
+        <div id="Education">
+            <h2>EDUCATION</h2>
+            <div class="edu">
+                <div><img src="https://i.ibb.co/520cKf3/edu1.jpg" alt=""></div>
+                <div>
+                    <h3>GRADUATE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    </p>
+                </div>
+            </div>
+            <div class="edu">
+                <div><img src="https://i.ibb.co/RTsvMRd/edu2.jpeg" alt=""></div>
+                <div>
+                    <h3>UNDER GRADUATE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    </p>
+                </div>
+            </div>
+            
+            
+        </div>
+    
+        <div id="Blogs">
+            <h2>BLOGS</h2>
+            <div class="blog">
+                <img src="https://i.ibb.co/w4dVGVj/blog1.jpg" alt="">
+                <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+            <div class="blog">
+                <img src="https://i.ibb.co/x37D8fV/blog2.webp" alt="">
+                <p class="details">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            </div> 
+        </div>
+    
+        <Footer>
+            <a href="https://twitter.com/">
+                <img src="https://i.ibb.co/jvpCRn6/10wmt-super-Jumbo-v4.jpg">
+            </a>
+            <a href="https://www.facebook.com/"> 
+                <img src="https://i.ibb.co/Pw1byBg/Facebook.png">
+            </a>
+            <a href="https://www.github.com/"> 
+                <img src="https://i.ibb.co/9ZP1ZL3/github.png">
+            </a>
+            <a href="https://www.linkedin.com/"> 
+                <img src="https://i.ibb.co/c1GzqbX/LinkedIN.png">
+            </a>
+        </Footer>
+    </div>
+    
+</body>
+</body>
+</html>
