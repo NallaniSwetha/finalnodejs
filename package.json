@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "node ./index.js",
+    "dev":"node ./index.js"
+  },
   "dependencies": {
     "mangodb": "^1.0.0",
     "mongodb": "^6.5.0"
